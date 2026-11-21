@@ -4,6 +4,8 @@
 
 Packet-switched on-chip interconnect: a parameterised router and a 2-D mesh generator, verified under random traffic up to saturation.
 
+![Architecture](docs/diagrams/architecture.svg)
+
 ## Router microarchitecture
 
 - 5 ports (Local, N, E, S, W), an input FIFO per port, valid/ready link-level flow control
@@ -47,6 +49,12 @@ make test     # 3 load / back-pressure corners
 make sweep    # latency vs. load table
 make lint
 ```
+
+## Test run
+
+Output of the CI command (`make test lint`), captured from a local run:
+
+![Test run](docs/screenshots/test_run.svg)
 
 ## Limitations / next steps
 
